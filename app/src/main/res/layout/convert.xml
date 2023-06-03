@@ -1,0 +1,360 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ConvertingActivity">
+
+	<RelativeLayout
+		android:id="@+id/page_convert_ek1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:background="@color/_bg__dashboard_ek2_color">
+
+
+		<RelativeLayout
+			android:id="@+id/header"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp">
+
+			<View
+				android:id="@+id/fill"
+				android:layout_width="wrap_content"
+				android:layout_height="56dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:background="@drawable/fill_shape" />
+
+
+			<RelativeLayout
+				android:id="@+id/arrow_back"
+				android:layout_width="35dp"
+				android:layout_height="53dp"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginStart="15dp">
+
+				<ImageView
+					android:id="@+id/note_icon"
+					android:layout_width="16dp"
+					android:layout_height="16dp"
+					android:layout_marginStart="4dp"
+					android:layout_marginTop="22dp"
+					android:src="@drawable/go_back"
+					android:tint="#FD5801" />
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/g_nderi_payla__m_"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="56dp"
+				android:layout_marginTop="16dp"
+				android:text="Main Menu"
+				android:textColor="#FD5801"
+				android:textSize="20sp" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/exit"
+			android:layout_below="@+id/textField">
+
+			<RelativeLayout
+				android:id="@+id/listen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="24dp">
+
+				<TextView
+					android:id="@+id/listen_the_text"
+					android:layout_width="142dp"
+					android:layout_height="38dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="41dp"
+					android:layout_marginTop="4dp"
+					android:gravity="center"
+					android:text="@string/listen_the_text_string"
+					android:textColor="@color/extracted_text_will_be_displayed_below_color"
+					android:textSize="20sp" />
+
+
+				<RelativeLayout
+					android:id="@+id/ant_design_sound_outlined"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp">
+
+					<ImageView
+						android:id="@+id/exit_icon"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="2.31dp"
+						android:layout_marginTop="11dp"
+						android:contentDescription="listen"
+						android:src="@drawable/listen"
+						android:tint="#FD5801" />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/save"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/translate"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="24dp"
+
+				android:layout_marginEnd="204dp">
+
+				<TextView
+					android:id="@+id/save_the_text"
+					android:layout_width="wrap_content"
+					android:layout_height="38dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="39dp"
+					android:layout_marginTop="4dp"
+					android:gravity="center|start"
+					android:text="  Save the Text"
+					android:textColor="@color/extracted_text_will_be_displayed_below_color"
+					android:textSize="20sp" />
+
+
+				<ImageView
+					android:id="@+id/save_icon"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="7dp"
+					app:srcCompat="@drawable/save" />
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/translate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/listen"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="24dp">
+
+				<TextView
+					android:id="@+id/translate_the_text"
+					android:layout_width="142dp"
+					android:layout_height="38dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="39dp"
+					android:layout_marginTop="4dp"
+					android:gravity="center|start"
+					android:text="  Translate"
+					android:textColor="@color/extracted_text_will_be_displayed_below_color"
+					android:textSize="20sp" />
+
+
+				<RelativeLayout
+					android:id="@+id/ant_design_sound_outlined"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp" />
+
+				<ImageView
+					android:id="@+id/translate_icon"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginTop="4dp"
+					app:srcCompat="@drawable/translate_icon" />
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/extracted_text_will_be_displayed_below"
+			android:layout_width="278dp"
+			android:layout_height="30dp"
+			android:layout_below="@+id/header"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_gravity="center_horizontal|center"
+			android:layout_marginStart="20dp"
+			android:layout_marginTop="28dp"
+			android:layout_marginEnd="24dp"
+			android:gravity="center|start"
+			android:text="@string/extracted_text_will_be_displayed_below_string"
+			android:textColor="@color/extracted_text_will_be_displayed_below_color"
+			android:textSize="16sp" />
+
+
+		<androidx.cardview.widget.CardView
+			android:id="@+id/textField"
+			android:layout_width="347dp"
+			android:layout_height="400dp"
+			android:layout_below="@+id/extracted_text_will_be_displayed_below"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentEnd="true"
+			android:layout_marginStart="24dp"
+			android:layout_marginLeft="24dp"
+			android:layout_marginTop="20dp"
+			android:layout_marginEnd="24dp"
+			app:cardBackgroundColor="#FFFFFF"
+			app:cardCornerRadius="7dp">
+
+			<EditText
+				android:id="@+id/recogText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/transparent"
+				android:ems="10"
+				android:inputType="textPersonName" />
+		</androidx.cardview.widget.CardView>
+
+		<RelativeLayout
+			android:id="@+id/exit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:background="@android:color/white">
+
+
+			<RelativeLayout
+				android:id="@+id/clear_group"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_marginStart="24dp"
+				android:layout_marginTop="0dp">
+
+
+				<RelativeLayout
+					android:id="@+id/ic_sharp_delete_outline"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="12dp"
+					android:layout_marginTop="0dp">
+
+					<ImageView
+						android:id="@+id/clear"
+						android:layout_width="21dp"
+						android:layout_height="27dp"
+						android:layout_marginStart="7.5dp"
+						android:layout_marginTop="4.5dp"
+						android:contentDescription="vector"
+						android:src="@drawable/clear" />
+
+				</RelativeLayout>
+
+				<TextView
+					android:id="@+id/clear_text"
+					android:layout_width="72dp"
+					android:layout_height="27dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="-2dp"
+					android:layout_marginTop="38dp"
+					android:gravity="center"
+					android:text="@string/clear_text_string"
+					android:textColor="@color/clear_text_color"
+					android:textSize="14sp" />
+
+			</RelativeLayout>
+
+
+			<RelativeLayout
+				android:id="@+id/copy_group"
+				android:layout_width="72dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_marginStart="270dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginEnd="24dp">
+
+
+				<ImageView
+					android:id="@+id/convert_icon"
+					android:layout_width="28.5dp"
+					android:layout_height="33dp"
+					android:layout_marginStart="22dp"
+					android:layout_marginTop="1.5dp"
+					android:contentDescription="copy"
+					android:src="@drawable/copy" />
+
+				<TextView
+					android:id="@+id/copy_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginStart="5dp"
+					android:layout_marginLeft="-2dp"
+					android:layout_marginTop="40dp"
+					android:gravity="center"
+					android:text="@string/copy_text_string"
+					android:textColor="@color/clear_text_color"
+					android:textSize="14sp" />
+
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/add_group"
+				android:layout_width="75dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="80dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginEnd="-210dp"
+				android:layout_toStartOf="@+id/copy_group"
+				android:layout_toEndOf="@+id/clear_group">
+
+				<TextView
+					android:id="@+id/add______"
+					android:layout_width="75dp"
+					android:layout_height="27dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="-2dp"
+					android:layout_marginTop="38dp"
+					android:gravity="center"
+					android:text="Add Photo"
+					android:textColor="@color/clear_text_color"
+					android:textSize="14sp" />
+
+
+				<RelativeLayout
+					android:id="@+id/material_symbols_add_circle_outline"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="5dp"
+					android:layout_marginTop="0dp">
+
+				</RelativeLayout>
+
+				<ImageView
+					android:id="@+id/qr_icon"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginStart="19dp"
+					android:layout_marginTop="3dp"
+					android:contentDescription="addPhoto"
+					android:src="@drawable/add" />
+
+			</RelativeLayout>
+
+
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

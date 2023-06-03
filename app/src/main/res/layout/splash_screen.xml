@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+
+	<RelativeLayout
+		android:id="@+id/page_yeni_ekran___splash_ek1"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<View
+			android:id="@+id/_bg__yeni_ekran___splash_ek2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:background="@drawable/_bg__yeni_ekran___splash_ek2_shape" />
+
+		<ImageView
+			android:id="@+id/unsplash__dank9gjvdy"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/unsplash__dank9gjvdy" />
+
+		<View
+			android:id="@+id/rectangle_1289"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentTop="true"
+			android:layout_marginStart="0dp"
+			android:layout_marginTop="0dp"
+			android:alpha="0.64999997615814"
+			android:background="@drawable/rectangle_1289_shape" />
+
+
+		<TextView
+			android:id="@+id/image_to_text_converter"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignEnd="@+id/_bg__yeni_ekran___splash_ek2"
+			android:layout_alignParentStart="true"
+			android:layout_gravity="center_horizontal|center"
+			android:layout_marginStart="60dp"
+			android:layout_marginEnd="60dp"
+			android:gravity="center"
+			android:text="@string/image_to_text_converter_string"
+			android:textAlignment="center"
+			android:textColor="@color/image_to_text_converter_color"
+			android:textSize="40sp" />
+
+	</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NoteActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <View
+            android:id="@+id/fill"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/fill_shape" />
+
+
+        <RelativeLayout
+            android:id="@+id/arrow_back"
+            android:layout_width="35dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp">
+
+            <ImageView
+                android:id="@+id/note_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/go_back"
+                android:tint="#FD5801" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/g_nderi_payla__m_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Main Menu"
+            android:textColor="#FD5801"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@color/_bg__convert_ek2_color"
+        android:padding="14dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/addnewnotebtn"
+            android:layout_below="@+id/notestitle"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/addnewnotebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#FF5722"
+            android:text="Add new Note"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

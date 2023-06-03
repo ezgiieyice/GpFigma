@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="14dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/round"
+    android:padding="16dp"
+    >
+        <TextView
+            android:id="@+id/titleItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="My Title"
+            android:layout_marginStart="64dp"/>
+
+        <TextView
+            android:id="@+id/textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleItem"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="My long long notee"
+            android:layout_marginStart="64dp"/>
+
+        <TextView
+            android:id="@+id/timeOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInput"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="2  Haziran 2023"
+            android:layout_marginStart="64dp"/>
+
+        <ImageView
+            android:id="@+id/notelist"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/notelist" />
+
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_bg__dashboard_ek2_color">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/fill"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/fill_shape" />
+
+
+        <RelativeLayout
+            android:id="@+id/arrow_back"
+            android:layout_width="35dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp">
+
+            <ImageView
+                android:id="@+id/note_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/go_back"
+                android:tint="#FD5801" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/g_nderi_payla__m_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Main Menu"
+            android:textColor="#FD5801"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="343dp"
+        android:layout_height="515dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#F4A166"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="302dp"
+            android:layout_height="372dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="7dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textMultiLine|textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#8E8E8E"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="302dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="290dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="#8E8E8E"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/saveBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="SAVE"
+        app:backgroundTint="#169600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

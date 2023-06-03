@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- dashboard strings -->
+
+	<string name="app_name">GP Project</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="image_to_text_string">Image to Text</string>
+	<string name="converter_string">Converter</string>
+	<string name="convert_string">Convert</string>
+	<string name="qr_string">QR</string>
+	<string name="note_string">Note</string>
+	<string name="exit_string">Exit</string>
+
+	<string name="clear_text_string">Clear text</string>
+	<string name="copy_text_string">Copy Text</string>
+	<string name="add_______string">Add .....</string>
+	<string name="extracted_text_will_be_displayed_below_string">Extracted text will be displayed below</string>
+	<string name="g_nderi_payla__m__string">Convert</string>
+	<string name="listen_the_text_string">Listen the text</string>
+
+	<string name="image_to_text_converter_string">Image to Text Converter</string>
+
+
+</resources>
