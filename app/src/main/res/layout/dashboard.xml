@@ -50,13 +50,13 @@
 
 		<RelativeLayout
 			android:id="@+id/convert"
-			android:layout_width="159dp"
-			android:layout_height="149dp"
+			android:layout_width="168dp"
+			android:layout_height="150dp"
 			android:layout_below="@+id/group_2560"
 			android:layout_alignParentStart="true"
 			android:layout_marginStart="24dp"
 			android:layout_marginTop="78dp"
-			android:layout_marginEnd="24dp"
+			android:layout_marginEnd="23dp"
 			android:layout_toStartOf="@+id/qr"
 			android:background="@drawable/round">
 
@@ -74,10 +74,10 @@
 					android:layout_height="46dp"
 					android:layout_gravity="center_horizontal|center"
 					android:layout_marginLeft="-4dp"
-					android:layout_marginTop="82dp"
+					android:layout_marginTop="80dp"
 					android:gravity="center"
 					android:text="@string/convert_string"
-					android:textColor="@color/convert_color"
+					android:textColor="@color/black"
 					android:textSize="24sp" />
 
 
@@ -104,8 +104,8 @@
 
 		<RelativeLayout
 			android:id="@+id/qr"
-			android:layout_width="159dp"
-			android:layout_height="149dp"
+			android:layout_width="165dp"
+			android:layout_height="150dp"
 			android:layout_below="@+id/group_2560"
 			android:layout_alignParentEnd="true"
 			android:layout_marginTop="78dp"
@@ -115,10 +115,10 @@
 
 			<RelativeLayout
 				android:id="@+id/group_2540"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
+				android:layout_width="77dp"
+				android:layout_height="130dp"
 				android:layout_marginStart="49dp"
-				android:layout_marginTop="22dp">
+				android:layout_marginTop="17dp">
 
 				<TextView
 					android:id="@+id/qr_text"
@@ -126,42 +126,22 @@
 					android:layout_height="46dp"
 					android:layout_alignParentStart="true"
 					android:layout_gravity="center_horizontal|center"
-					android:layout_marginStart="4dp"
-					android:layout_marginLeft="10dp"
-					android:layout_marginTop="81dp"
+					android:layout_marginStart="8dp"
+					android:layout_marginLeft="11dp"
+					android:layout_marginTop="83dp"
 					android:gravity="center"
 					android:text="@string/qr_string"
-					android:textColor="@color/convert_color"
+					android:textColor="#000000"
 					android:textSize="24sp" />
 
 
-				<RelativeLayout
-					android:id="@+id/frame_2485"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp">
-
-
-					<RelativeLayout
-						android:id="@+id/ic_baseline_qr_code_2"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:layout_marginStart="-7.38dp"
-						android:layout_marginTop="-7.38dp">
-
-						<ImageView
-							android:id="@+id/qr_icon"
-							android:layout_width="59.08dp"
-							android:layout_height="59.08dp"
-							android:layout_marginStart="9.85dp"
-							android:layout_marginTop="9.84dp"
-							android:contentDescription="vector_ek2"
-							android:src="@drawable/qr" />
-
-					</RelativeLayout>
-
-				</RelativeLayout>
+				<ImageView
+					android:id="@+id/imageView2"
+					android:layout_width="72dp"
+					android:layout_height="72dp"
+					android:layout_marginStart="3dp"
+					android:src="@drawable/qr"
+					android:tint="#FD700D" />
 
 			</RelativeLayout>
 
@@ -194,15 +174,6 @@
 					android:layout_marginStart="0dp"
 					android:layout_marginTop="0dp">
 
-					<ImageView
-						android:id="@+id/note_icon"
-						android:layout_width="58.67dp"
-						android:layout_height="40.06dp"
-						android:layout_marginStart="2.67dp"
-						android:layout_marginTop="13.33dp"
-						android:contentDescription="vector_ek3"
-						android:src="@drawable/note" />
-
 				</RelativeLayout>
 
 				<TextView
@@ -210,12 +181,25 @@
 					android:layout_width="wrap_content"
 					android:layout_height="40dp"
 					android:layout_gravity="center_horizontal|center"
-					android:layout_marginLeft="5dp"
+					android:layout_marginLeft="8dp"
 					android:layout_marginTop="75dp"
 					android:gravity="center"
 					android:text="@string/note_string"
-					android:textColor="@color/convert_color"
+					android:textColor="@color/black"
 					android:textSize="24sp" />
+
+				<ImageView
+					android:id="@+id/notes"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/notes"
+					app:tint="#FD6D08" />
+
+				<ImageView
+					android:id="@+id/imageView4"
+					android:layout_width="52dp"
+					android:layout_height="58dp"
+					app:srcCompat="@drawable/notte" />
 
 			</RelativeLayout>
 

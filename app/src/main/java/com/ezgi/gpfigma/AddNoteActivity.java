@@ -31,6 +31,9 @@ public class AddNoteActivity extends Activity {
         Realm.init(getApplicationContext());
         Realm realm = Realm.getDefaultInstance();
 
+        String previousText = getIntent().getStringExtra("text");
+        textInput.setText(previousText);
+
         saveBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

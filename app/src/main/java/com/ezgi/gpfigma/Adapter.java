@@ -45,7 +45,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.TheViewHolder>{
 
         String formatedTime = DateFormat.getDateTimeInstance().format(note.createdTime);
         holder.timeOutput.setText(formatedTime);
-        holder.image.setImageResource(R.drawable.notelist);
+        holder.image.setImageResource(R.drawable.edit);
 
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

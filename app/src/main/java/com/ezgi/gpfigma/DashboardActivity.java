@@ -1,9 +1,10 @@
 package com.ezgi.gpfigma;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.RelativeLayout;
 
@@ -46,17 +47,20 @@ public class DashboardActivity extends Activity {
 			}
 		});
 
-		//buraya alert getirilebilir
+		//alert
 		exit.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				new Handler().postDelayed(new Runnable() {
+				AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
+				builder.setMessage("Uygulamadan çıkmak istiyor musunuz?");
+				builder.setPositiveButton("Evet", new DialogInterface.OnClickListener() {
 					@Override
-					public void run() {
-						Intent intent = new Intent(DashboardActivity.this,QrActivity.class);
-						startActivity(intent);
+					public void onClick(DialogInterface dialog, int which) {
+						finish();
 					}
-				},0);
+				});
+				builder.setNegativeButton("Hayır", null);
+				builder.show();
 			}
 		});
 

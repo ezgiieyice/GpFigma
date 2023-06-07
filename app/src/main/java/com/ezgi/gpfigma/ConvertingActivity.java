@@ -8,7 +8,6 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.speech.tts.TextToSpeech;
@@ -127,13 +126,7 @@ public class ConvertingActivity extends Activity {
 		goBack.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				new Handler().postDelayed(new Runnable() {
-					@Override
-					public void run() {
-						Intent intent = new Intent(ConvertingActivity.this, DashboardActivity.class);
-						startActivity(intent);
-					}
-				}, 100); //delay in milliseconds, e.g. 1000 for 1 second delay
+				startActivity(new Intent(ConvertingActivity.this, DashboardActivity.class));
 			}
 		});
 
@@ -234,6 +227,10 @@ public class ConvertingActivity extends Activity {
 		translate.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				String text = recogText.getText().toString();
+				Intent intent = new Intent(ConvertingActivity.this, TranslateActivitiy.class);
+				intent.putExtra("text", text);
+				startActivity(intent);
 
 			}
 		});
@@ -243,7 +240,10 @@ public class ConvertingActivity extends Activity {
 			public void onClick(View v) {
 				String text = recogText.getText().toString();
 				if(!text.isEmpty()){
-					startActivity(new Intent(ConvertingActivity.this,AddNoteActivity.class));
+					Intent intent = new Intent(ConvertingActivity.this, AddNoteActivity.class);
+					intent.putExtra("text", text);
+					startActivity(intent);
+
 				}
 				else{
 					Toast.makeText(ConvertingActivity.this,"There is no extracted text for saving", Toast.LENGTH_SHORT).show();

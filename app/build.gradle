@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId "com.ezgi.gpfigma"
         minSdk 21
-        targetSdk 33
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -49,5 +49,7 @@ dependencies {
     implementation 'io.realm:realm-android-library:10.11.1' //db
 
     implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2' //qr
+
+    implementation 'com.google.mlkit:translate:17.0.1'//translate
 
 }
